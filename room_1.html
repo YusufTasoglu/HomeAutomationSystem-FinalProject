@@ -1,0 +1,103 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Automation System</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/mains/rooms_main_c.css">
+    <link rel="stylesheet" media="(max-width:500px)" href="css/mobiles/rooms_mobile_c.css">
+    <script>
+
+        function increaseValue() {
+            var value = parseInt(document.getElementById('number').value, 10);
+            value = isNaN(value) ? 24 : value;
+            value++;
+            document.getElementById('number').value = value;
+            if (value > 16) {
+                var element = document.getElementById("temp");
+                element.style.backgroundColor = "orange";
+            }
+            if (value > 30) {
+                var element = document.getElementById("temp");
+                element.style.backgroundColor = "red";
+            }
+
+        }
+
+        function decreaseValue() {
+            var value = parseInt(document.getElementById('number').value, 10);
+            value = isNaN(value) ? 24 : value;
+            value < 1 ? value = 1 : '';
+            value--;
+            document.getElementById('number').value = value;
+            if (value < 30) {
+                var element = document.getElementById("temp");
+                element.style.backgroundColor = "orange";
+            }
+            if (value < 16) {
+                var element = document.getElementById("temp");
+                element.style.backgroundColor = "aqua";
+            }
+
+
+
+        }
+    </script>
+
+</head>
+
+<body>
+    <header class="bg-dark-blue">
+        <nav id="navbar">
+            <h1 class="heading-small">Home Automation System</h1>
+            <ul style="font-size: 1.25rem;">
+                <li><a href="home_c.html">Home </a></li>
+                <li><a href="communication.html">Communication</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1 id="header">----- Room 1 -----</h1>
+    <div class="camera">
+        <img src="Images/room1.jpg" alt="camera">
+    </div>
+    <section class="container">
+
+        <div id="temp" class="temperature">
+            <h1>Target Temperature :</h1>
+            <div class="controls">
+                <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                <input type="number" id="number" value="24" />
+                <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+            </div>
+            <h1>Current Temperature :</h1>
+            <input type="number" id="number" value="22" />
+        </div>
+
+        <div class="little-control">
+            <h1>Light</h1>
+            <form style="display: inherit;">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </form>
+        </div>
+        <div class="little-control">
+            <h1>Window Shades</h1>
+            <form style="display: inherit;">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </form>
+        </div>
+    </section>
+
+
+    </div>
+</body>
+
+</html>
