@@ -1,0 +1,77 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/mains/general_settings_main.css">
+    <link rel="stylesheet" media="(max-width:500px)" href="css/mobiles/general_settings_mobile.css">
+    <script>
+
+        function increaseValue() {
+            var value = parseInt(document.getElementById('number').value, 10);
+            value = isNaN(value) ? 24 : value;
+            value++;
+            document.getElementById('number').value = value;
+        }
+
+        function decreaseValue() {
+            var value = parseInt(document.getElementById('number').value, 10);
+            value = isNaN(value) ? 24 : value;
+            value < 1 ? value = 1 : '';
+            value--;
+            document.getElementById('number').value = value;
+        }
+    </script>
+</head>
+
+<body>
+    <header class="bg-dark-blue">
+        <nav id="navbar">
+            <h1 class="heading-small">Home Automation System</h1>
+            <ul style="font-size: 1.25rem;">
+                <li><a href="home_c.html">Home </a></li>
+                <li><a href="communication.html">Communication</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="container">
+
+        <div class="wifi">
+            <h1>WIFI</h1>
+            <form style="display: inherit;">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </form>
+            <a id="speed-test" class="btn btn-primary" href="https://fast.com/tr/">Speed Test</a>
+        </div>
+
+        <div id="temp" class="temperature">
+            <h1>Target Temperature :</h1>
+            <div class="controls">
+                <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                <input type="number" id="number" value="24" />
+                <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+            </div>
+            <h1 id="current-temp">Current Temperature :</h1>
+            <input type="number" id="number" value="22" />
+        </div>
+
+        <div class="garage-door">
+            <h1>Garage Door</h1>
+            <form style="display: inherit;">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
