@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #ffff;
+}
+
+html {
+    font-family: "Open Sans", sans-serif;
+}
+
+#navbar {
+    color: #ffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.75rem;
+    height: 70px;
+    position: static;
+}
+
+#navbar ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+#navbar ul li a {
+    padding: 0.75rem;
+}
+
+#navbar ul li a:hover {
+    background-color: #2429b1;
+    border-radius: 4px;
+}
+
+.value-button {
+    font-size: 1.5rem;
+    color: white;
+    display: inline-block;
+    border: 1px solid #ddd;
+    margin-top: 0px;
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 11px 0;
+    background: #2429b1;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.value-button:hover {
+    border: 1px solid #2429b1;
+    background-color: white;
+    color: #2429b1;
+}
+
+form #decrease {
+    margin-right: -4px;
+    border-radius: 8px 0 0 8px;
+}
+
+form #increase {
+    margin-left: -4px;
+    border-radius: 0 8px 8px 0;
+}
+
+form #input-wrap {
+    margin: 0px;
+    padding: 0px;
+}
+
+input#number {
+    text-align: center;
+    border: 1.5px solid #ddd;
+    margin: 0px;
+    width: 50px;
+    height: 50px;
+
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+.switch {
+    margin: 35% 25%;
+    margin-top: 25%;
+    position: relative;
+    display: inline-block;
+    width: 127px;
+    height: 108px;
+}
+
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 100px;
+    width: 93px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.container {
+    margin-top: 7.5%;
+    height: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 1100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #fff;
+    padding: 2rem;
+    padding-bottom: 4rem;
+}
+
+.container .wifi {
+    background-color: white;
+    padding: 1rem;
+    height: 100%;
+    width: 25%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container .wifi h1 {
+    margin-top: 25%;
+    text-align: center;
+}
+
+.container .wifi #speed-test {
+    margin: 0 15%;
+    width: 15%;
+}
+
+.container .temperature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+    width: 25%;
+    height: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+.container .temperature h1 {
+    margin-top: 25%;
+    margin-bottom: 2rem;
+}
+
+.container .garage-door {
+    padding: 1rem;
+    text-align: center;
+    width: 25%;
+    height: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container .garage-door h1 {
+    margin-top: 25%;
+}

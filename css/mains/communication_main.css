@@ -1,0 +1,213 @@
+.yazi1 {
+    justify-content: left;
+    margin-left: 150px;
+    margin-top: 30px;
+
+  }
+
+  .yazi2 {
+    text-align: right;
+    margin-left: 900px;
+    margin-top: 30px;
+  }
+
+  #btn {
+    margin-left: 3.5rem;
+    color: white;
+    background: #2429b1;
+    padding: 0.8rem 3rem;
+    border-radius: 0.75rem;
+    letter-spacing: 0.5px;
+    border: 0.5px #2429b1 solid;
+  }
+
+  #btn-primary {
+    background: #2429b1;
+  }
+
+  .yazilar {
+    display: flex;
+  }
+
+  #btn:hover {
+    background-color: white;
+    color: #2429b1;
+    border: 0.5px #2429b1 solid;
+  }
+
+  #text {
+    padding-bottom: 60px;
+    padding-right: 200px;
+  }
+
+  #email {
+    padding: 10px;
+    margin: 9px;
+  }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+
+  html {
+    box-sizing: border-box;
+
+  }
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  #navbar {
+    color: #ffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.75rem;
+    height: 70px;
+  }
+
+  #navbar ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+  }
+
+  #navbar ul li a {
+    padding: 0.75rem;
+  }
+
+
+  #navbar ul li a:hover {
+    background-color: #2429b1;
+    border-radius: 4px;
+  }
+
+  .bg-dark-blue {
+    background: #080720;
+  }
+
+  .bg-light-blue {
+    background-color: #2429b1;
+  }
+
+  a {
+    text-decoration: none;
+    color: #ffff;
+  }
+
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+
+  .card {
+    font-size: 1.5rem;
+    padding: 3rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 2rem;
+  }
+
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+
+  .container::after,
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .title {
+    color: grey;
+  }
+
+  .button {
+    font-size: 1.75rem;
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    height: 3rem;
+    visibility: hidden;
+  }
+
+  .button:hover {
+    background-color: #555;
+  }
+
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  .navbar .logo {
+    float: left;
+    margin-left: 40px;
+    margin-top: 20px;
+  }
+
+  .navbar {
+
+    width: 100%;
+    height: 80px;
+    background-color: 080710;
+
+  }
+
+  .navbar a {
+    float: right;
+    color: white;
+    margin: 15px;
+
+  }
+
+  .navbar .logo {
+    text-decoration: none;
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+
+  .navbar ul li {
+    list-style: none;
+    display: inline;
+    font-size: 20px;
+    margin: 10px;
+
+  }
+
+  .contact {
+    position: absolute;
+    left: 1rem;
+    bottom: 0;
+    margin: 1rem;
+    padding: 1rem;
+    padding-right: 3rem;
+    display: inline-block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+  }
+  .card-container{
+    display: flex;
+    justify-content: space-between;
+  }
