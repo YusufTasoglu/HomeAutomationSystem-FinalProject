@@ -1,0 +1,41 @@
+#navbar {
+    flex-direction: column;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    overflow: hidden;
+    height: 80px;
+}
+.card{
+    font-size: 1rem;
+    margin: 0;
+    width: 100%;
+}
+
+.about-section {
+    width: 100%;
+}
+
+.button {
+    font-size: 1.25rem;
+    visibility: visible;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .card-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact {
+    margin-left: 0;
+    margin: 1rem 0;
+    position: relative;
+}
+
+.contact #text {
+    width: 100%;
+}
